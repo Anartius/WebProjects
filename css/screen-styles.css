@@ -1,24 +1,17 @@
 body {
-    background-color: grey;
+    background-color: #393e48
 }
+
 @media screen and (min-width: 320px) {
-    body {
-        background-color: green;
-    }
+
 }
 
 @media screen and (min-width: 550px){
-    body {
-        background-color: yellow;
-    }
+
 }
 @media screen and (min-widt: 769px) {
-    body {
-        background-color: orange;
-    }
+
 }
 @media screen and (min-width: 960px) {
-    body {
-        background-color:red;
-    }
+
 }
