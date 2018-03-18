@@ -1,29 +1,46 @@
 body {
     background-color: #393e48;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px;
     width: 80%;
+
     color: white;
+}
+
+#header {
+    background-color: #ebebeb;
+    height: 40px;
+    flex-wrap: wrap;
+    font-size: 18px;
 }
 
 p {
     text-indent: 20px;
+    text-align: justify;
 
 }
 
 a {
     color: #ff8de3;
+    text-decoration: none;
 }
 
-#header {
-    background-color: #ebebeb;
-    height: 30px;
-    flex-wrap: wrap;
-
-}
-
-#fon {
+.fon {
     background-color: #505968;
-    padding: 5px;
+    padding: 15px;
     height: 500px;
+}
+
+.top-menu {
+    color: #bc56a3;
+}
+
+a:hover.top-menu {
+     color: #ff8de3;
+ }
+a:active {
+    color: #ff8de3;
+    font-size: 17px;
 }
 
 /*@media screen and (min-width: 320px) {
