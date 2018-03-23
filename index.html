@@ -7,34 +7,42 @@
     <link rel="stylesheet" type="text/css" href="css/screen-styles.css"/>
 </head>
 
-<body >
-<div id="header">
-    <!--<div style="display:flex; justify-content: space-between">-->
-    <div>
-        <div style="margin: 5px;">
+<body>
+<div id="header" >
+    <div style="display:flex; justify-content: space-between">
+
+        <div style="margin: 10px 15px;">
             <a href="index.html"><img src="img/logo.png" alt="Логотип"></a>
         </div>
-        <div style="margin: 5px 20px; text-shadow: 1px 1px 1px #000">
-            <a href="index.html" class="top-menu"><strong>Главная</strong></a>
-        </div>
-        <div style="margin: 5px 20px; text-shadow: 1px 1px 1px #000">
-            <a href="foto.html" class="top-menu"><strong>Фотогалерея</strong></a>
-        </div>
-        <div style="margin: 5px 20px; text-shadow: 1px 1px 1px #000">
-            <a href="arduino.html" class="top-menu"><strong>Ардуино</strong></a>
-        </div>
-        <div style="margin: 5px 20px; text-shadow: 1px 1px 1px #000">
-            <a href="about.html" class="top-menu"><strong>Контакты</strong></a>
-        </div>
+
+        <ul id="menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="foto.html">Фотогалерея</a></li>
+            <li><a href="arduino.html">Ардуино</a>
+                <ul id="hide_menu">
+                    <li><a href="#">Описание</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Фото работ</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">Контакты</a></li>
+        </ul>
+
     </div>
 </div>
 
-<div class="fon">
-    <div>
-        Menu
+<div class="fon" style="display: inline-block">
+    <div style="float: left; border-radius: 4px; background-color: #393e48;">
+        <ul id="sub_menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="foto.html">Фотогалерея</a></li>
+            <li><a href="arduino.html">Ардуино</a></li>
+            <li><a href="about.html">Контакты</a></li>
+        </ul>
     </div>
 
-    <div>
+    <div style="float: left; width: calc(100% - 140px); margin-left: 20px">
+        <img src="img/dev.jpg" style="width: 150px; float: left; margin-right: 10px">
         <p>Доброго времени суток. Данный сайт был создан для отработки знаний,
             полученнных в процессе изучения HTML+CSS. В процессе изучения сайт
             видоизменялся, улучшался, добавлялись новые функции, блоки,
@@ -48,7 +56,8 @@
         <p>Благодарю за внимание</p>
     </div>
 </div>
-<div class="fon" style="margin-top: 20px; height: auto">
+
+<div id="footer">
     <p style="text-align: right"><a href="about.html">Chichel Anatoliy.</a>
         Создание сайтов по Вошему макету. 2018г.</p>
 </div>
