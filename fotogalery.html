@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Главная. Изучение HTML+CSS</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+</head>
+
+
+<body>
+<div id="header" >
+    <div style="display:flex; justify-content: space-between">
+
+        <div style="margin: 10px 15px;">
+            <a href="index.html"><img src="img/logo.png" alt="Логотип"></a>
+        </div>
+
+        <ul id="menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="fotogalery.html">Фотогалерея</a>
+                <ul>
+                    <li><a href="#">Авторские</a></li>
+                    <li><a href="#">Природа</a></li>
+                    <li><a href="#">Авто</a></li>
+                    <li><a href="#">Мото</a></li>
+                </ul>
+            </li>
+            <li><a href="arduino-index.html">Ардуино</a>
+                <ul>
+                    <li><a href="#">Описание</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Фото работ</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">Контакты</a></li>
+        </ul>
+
+    </div>
+</div>
+
+
+<div class="fon" style="display: inline-block">
+    <div style="float: left; border-radius: 4px; background-color: #393e48; margin-left: 100px">
+        <ul id="sub_menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="fotogalery.html">Фотогалерея</a></li>
+            <li><a href="arduino-index.html">Ардуино</a></li>
+            <li><a href="about.html">Контакты</a></li>
+        </ul>
+    </div>
+
+    <p> Мне приятно, что Вы заглянули в этот раздел сайта. <br>
+        Здесь находится небольшая подборка фотографий. Часть из них сделаны мной и
+        расположена в разделе "Авторские", остальные найдены на просторах
+        интернета.</p>
+    <div style="float: left; width: calc(100% + 140px); margin-left: 20px">
+        <div style="display: flex; justify-content: space-around;">
+            <div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="footer">
+    <p style="text-align: right"><a href="about.html">Chichel Anatoliy.</a>
+        Создание сайтов по Вошему макету. 2018г.</p>
+</div>
+
+
+</body>
+</html>
