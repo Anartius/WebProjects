@@ -1,3 +1,41 @@
-/*body {
-    background-color: RGB(57,62,72)
-}*/
+body {
+    background-color: #393e48;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px;
+    width: 80%;
+    color: white;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#header {
+    background-color: #ebebeb;
+    height: 40px;
+    border-radius: 4px;
+}
+
+p {
+    text-indent: 20px;
+    text-align: justify;
+}
+
+a {
+    color: #ff8de3;
+    text-decoration: none;
+}
+
+.fon {
+    background-color: #505968;
+    width: 80%;
+    padding: 15px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: auto;
+    border-radius: 4px;
+}
+
+#footer {
+    bottom: 5px;
+    margin: auto;
+    height: 30px;
+}

@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title>Главная. Изучение HTML+CSS</title>
-    <!-- <link rel="stylesheet" type="text/css" href="main.css"/> -->
-    <link rel="stylesheet" type="text/css" href="css/screen-styles.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css"/>
 </head>
+
 
 <body>
 <div id="header" >
@@ -17,9 +18,16 @@
 
         <ul id="menu">
             <li><a href="index.html">Главная</a></li>
-            <li><a href="foto.html">Фотогалерея</a></li>
-            <li><a href="arduino.html">Ардуино</a>
-                <ul id="hide_menu">
+            <li><a href="fotogalery.html">Фотогалерея</a>
+                <ul>
+                    <li><a href="#">Авторские</a></li>
+                    <li><a href="#">Природа</a></li>
+                    <li><a href="#">Авто</a></li>
+                    <li><a href="#">Мото</a></li>
+                </ul>
+            </li>
+            <li><a href="arduino-index.html">Ардуино</a>
+                <ul>
                     <li><a href="#">Описание</a></li>
                     <li><a href="#">Статьи</a></li>
                     <li><a href="#">Фото работ</a></li>
@@ -31,18 +39,19 @@
     </div>
 </div>
 
+
 <div class="fon" style="display: inline-block">
     <div style="float: left; border-radius: 4px; background-color: #393e48;">
         <ul id="sub_menu">
             <li><a href="index.html">Главная</a></li>
-            <li><a href="foto.html">Фотогалерея</a></li>
-            <li><a href="arduino.html">Ардуино</a></li>
+            <li><a href="fotogalery.html">Фотогалерея</a></li>
+            <li><a href="arduino-index.html">Ардуино</a></li>
             <li><a href="about.html">Контакты</a></li>
         </ul>
     </div>
 
     <div style="float: left; width: calc(100% - 140px); margin-left: 20px">
-        <img src="img/dev.jpg" style="width: 150px; float: left; margin-right: 10px">
+        <img src="img/dev.jpg" style="width: 150px; float: right; margin-left: 10px">
         <p>Доброго времени суток. Данный сайт был создан для отработки знаний,
             полученнных в процессе изучения HTML+CSS. В процессе изучения сайт
             видоизменялся, улучшался, добавлялись новые функции, блоки,
@@ -56,6 +65,7 @@
         <p>Благодарю за внимание</p>
     </div>
 </div>
+
 
 <div id="footer">
     <p style="text-align: right"><a href="about.html">Chichel Anatoliy.</a>
