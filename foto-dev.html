@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Главная. Изучение HTML+CSS</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+</head>
+
+
+<body>
+<div class="container">
+    <div class="header">
+        <div style="display:flex; justify-content: space-between">
+
+            <div style="margin: 10px 15px;">
+                <a href="index.html"><img src="img/logo.png" alt="Логотип"></a>
+            </div>
+
+            <ul id="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="fotogalery.html">Фотогалерея</a>
+                    <ul>
+                        <li><a href="foto-dev.html">Авторские</a></li>
+                        <li><a href="foto-nature.html">Природа</a></li>
+                        <li><a href="foto-auto.html">Авто</a></li>
+                        <li><a href="foto-moto.html">Мото</a></li>
+                    </ul>
+                </li>
+                <li><a href="arduino-index.html">Ардуино</a>
+                    <ul>
+                        <li><a href="#">Описание</a></li>
+                        <li><a href="#">Статьи</a></li>
+                        <li><a href="#">Фото работ</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">Контакты</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="fon">
+        <div style="align-self: flex-start; border-radius: 4px; background-color: #393e48;">
+            <ul id="sub_menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="fotogalery.html">Фотогалерея</a></li>
+                <li><a href="arduino-index.html">Ардуино</a></li>
+                <li><a href="about.html">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div style="display: flex; flex-direction: column; margin-left: 20px; flex: auto">
+            <div style="align-self: flex-start">
+                <p> На данной странице представлено несколько фотографий сделанных лично мной.</p>
+            </div>
+            <div id="foto" style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 30px">
+                <div class="foto-galery">
+                    <a href="#img/girls.jpg"><img src="img/girls.jpg" alt="Маришка и Алеся"></a>
+                    <a id="img/girls.jpg" href="#" class="full" style="background-image: url(img/girls.jpg)"></a>
+                    <p>Алеся и Маришка. Фото сделано во время поездки в Кронштадт в 2014 году.</p>
+                </div>
+
+                <div class="foto-galery">
+                    <a href="#img/church.jpg"><img src="img/church.jpg" alt="Церковь"></a>
+                    <a id="img/church.jpg" href="#" class="full" style="background-image: url(img/church.jpg)"></a>
+                    <p>Морской Никольский собор. Фото сделано во время поездки в Кронштадт в 2014 году.</p>
+                </div>
+
+                <div class="foto-galery">
+                    <a href="#img/spb_afterglow.jpg"><img src="img/spb_afterglow.jpg" alt="Закат"></a>
+                    <a id="img/spb_afterglow.jpg" href="#" class="full"
+                       style="background-image: url(img/spb_afterglow.jpg)"></a>
+                    <p>Закат на финском заливе. Фото сделано весной 2018 года.</p>
+                </div>
+
+                <div class="foto-galery">
+                    <a href="#img/spb_zsd.jpg"><img src="img/spb_zsd.jpg" alt="ЗСД ночью"></a>
+                    <a id="img/spb_zsd.jpg" href="#" class="full" style="background-image: url(img/spb_zsd.jpg)"></a>
+                    <p>Ночной вид на западный скоростной диаметр. Фото сделано весной 2018 года.</p>
+                </div>
+
+                <div class="foto-galery">
+                    <a href="#img/igora.jpg"><img src="img/igora.jpg" alt="Игора. Перед дождём"></a>
+                    <a id="img/igora.jpg" href="#" class="full" style="background-image: url(img/igora.jpg)"></a>
+                    <p>Строительство автодрома "Игора". Скоро будет дождь. Фото сделано летом 2017 года.</p>
+                </div>
+
+                <div class="foto-galery">
+                    <a href="#img/ozero.jpg"><img src="img/ozero.jpg" alt="Закат"></a>
+                    <a id="img/ozero.jpg" href="#" class="full" style="background-image: url(img/ozero.jpg)"></a>
+                    <p>Озеро. Закат. Недалеко от Витебска. Фото сделано летом 2008 года.</p>
+                </div>
+
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p style="text-align: right"><a href="about.html">Chichel Anatoliy.</a>
+            Создание сайтов по Вашему макету. 2018г.</p>
+    </div>
+
+</div>
+</body>
+</html>

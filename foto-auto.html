@@ -5,7 +5,6 @@
     <title>Главная. Изучение HTML+CSS</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css"/>
-    <script src="js/main.js"></script>
 </head>
 
 
@@ -52,38 +51,37 @@
             </ul>
         </div>
 
-        <div style="display: flex; flex-direction: column; margin-left: 20px">
-            <div>
-                <p> Мне приятно, что Вы заглянули в этот раздел сайта. <br>
-                    Здесь находится небольшая подборка фотографий. Часть из них сделаны мной и
-                    расположена в разделе "Авторские", остальные найдены на просторах
-                    интернета.</p>
+        <div style="display: flex; flex-direction: column; margin-left: 20px; flex: auto">
+            <div style="align-self: flex-start">
+                <p> На данной странице представлено несколько фотографий автомобилей.</p>
             </div>
-            <div id="foto" style="display: flex; justify-content: space-between; padding: 0;">
-                <a href="foto-dev.html">
-                    <div style="width: 200px">
-                        <img src="img/spb_afterglow.jpg" alt="Авторские">
-                        Авторские
-                    </div>
-                </a>
-                <a href="foto-nature.html">
-                    <div style="width: 200px">
-                        <img src="img/ozero_v_lesu.jpg" alt="Природа">
-                        Природа
-                    </div>
-                </a>
-                <a href="foto-auto.html">
-                    <div style="width: 200px">
-                        <img src="img/audi-r8.jpg" alt="Авто">
-                        Аато
-                    </div>
-                </a>
-                <a href="foto-moto.html">
-                    <div style="width: 200px">
-                        <img src="img/moto.jpg" alt="Мото">
-                        Мото
-                    </div>
-                </a>
+            <div id="foto" style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 30px">
+                <div class="foto-galery">
+                    <a href="#img/toyota-supra-drift.jpg"><img src="img/toyota-supra-drift.jpg" alt="Toyota Supra"></a>
+                    <a id="img/toyota-supra-drift.jpg" href="#" class="full"
+                       style="background-image: url(img/toyota-supra-drift.jpg)"></a>
+                    <p>Toyota Supra.</p>
+                </div>
+
+                <div class="foto-galery">
+                    <a href="#img/audi-r8.jpg"><img src="img/audi-r8.jpg" alt="Audi R8"></a>
+                    <a id="img/audi-r8.jpg" href="#" class="full" style="background-image: url(img/audi-r8.jpg)"></a>
+                    <p>Audi R8.</p>
+                </div>
+
+                <div class="foto-galery">
+                    <a href="#img/bmw-i8.jpg"><img src="img/bmw-i8.jpg" alt="BMW i8"></a>
+                    <a id="img/bmw-i8.jpg" href="#" class="full" style="background-image: url(img/bmw-i8.jpg)"></a>
+                    <p>BMW i8.</p>
+                </div>
+
+                <div class="foto-galery">
+                    <a href="#img/retro-maybach.jpg"><img src="img/retro-maybach.jpg" alt="Retro Maybach"></a>
+                    <a id="img/retro-maybach.jpg" href="#" class="full"
+                       style="background-image: url(img/retro-maybach.jpg)"></a>
+                    <p>Retro Maybach.</p>
+                </div>
+
             </div>
         </div>
         <div>

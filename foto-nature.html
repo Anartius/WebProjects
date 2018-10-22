@@ -5,7 +5,6 @@
     <title>Главная. Изучение HTML+CSS</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css"/>
-    <script src="js/main.js"></script>
 </head>
 
 
@@ -52,38 +51,40 @@
             </ul>
         </div>
 
-        <div style="display: flex; flex-direction: column; margin-left: 20px">
-            <div>
-                <p> Мне приятно, что Вы заглянули в этот раздел сайта. <br>
-                    Здесь находится небольшая подборка фотографий. Часть из них сделаны мной и
-                    расположена в разделе "Авторские", остальные найдены на просторах
-                    интернета.</p>
+        <div style="display: flex; flex-direction: column; margin-left: 20px; flex: auto">
+            <div style="align-self: flex-start">
+                <p> На данной странице представлено несколько фотографий природы.</p>
+
             </div>
-            <div id="foto" style="display: flex; justify-content: space-between; padding: 0;">
-                <a href="foto-dev.html">
-                    <div style="width: 200px">
-                        <img src="img/spb_afterglow.jpg" alt="Авторские">
-                        Авторские
-                    </div>
-                </a>
-                <a href="foto-nature.html">
-                    <div style="width: 200px">
-                        <img src="img/ozero_v_lesu.jpg" alt="Природа">
-                        Природа
-                    </div>
-                </a>
-                <a href="foto-auto.html">
-                    <div style="width: 200px">
-                        <img src="img/audi-r8.jpg" alt="Авто">
-                        Аато
-                    </div>
-                </a>
-                <a href="foto-moto.html">
-                    <div style="width: 200px">
-                        <img src="img/moto.jpg" alt="Мото">
-                        Мото
-                    </div>
-                </a>
+            <div id="foto" style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 30px">
+                <div class="foto-galery">
+                    <a href="#img/ozero_v_lesu.jpg"><img src="img/ozero_v_lesu.jpg" alt="Озеро в лесу"></a>
+                    <a id="img/ozero_v_lesu.jpg" href="#" class="full"
+                       style="background-image: url(img/ozero_v_lesu.jpg)"></a>
+                    <p>Озеро в лесу.</p>
+                </div>
+
+                <div class="foto-galery">
+                    <a href="#img/gornyi_vid.jpg"><img src="img/gornyi_vid.jpg" alt="Горный вид"></a>
+                    <a id="img/gornyi_vid.jpg" href="#" class="full"
+                       style="background-image: url(img/gornyi_vid.jpg)"></a>
+                    <p>Горный вид.</p>
+                </div>
+
+                <div class="foto-galery">
+                    <a href="#img/eli_v_lesy.jpg"><img src="img/eli_v_lesy.jpg" alt="Ели в лесу"></a>
+                    <a id="img/eli_v_lesy.jpg" href="#" class="full"
+                       style="background-image: url(img/eli_v_lesy.jpg)"></a>
+                    <p>Ели в лесу.</p>
+                </div>
+
+                <div class="foto-galery">
+                    <a href="#img/zimnyi_les.jpg"><img src="img/zimnyi_les.jpg" alt="Зимний лес"></a>
+                    <a id="img/zimnyi_les.jpg" href="#" class="full"
+                       style="background-image: url(img/zimnyi_les.jpg)"></a>
+                    <p>Зимний лес.</p>
+                </div>
+
             </div>
         </div>
         <div>

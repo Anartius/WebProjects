@@ -1,17 +1,39 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    padding: 0;
     background-color: #393e48;
+    text-align: center;
+    height: 97%;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 85%;
     font-family: Verdana, Arial, sans-serif;
     font-size: 14px;
     color: white;
-    text-align: center;
-    margin-top: 15px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+
 }
 
-#header {
+.header {
     background-color: #ebebeb;
-    width: 1200px;
-    height: 40px;
+    width: 100%;
     margin: auto;
+    margin-top: 15px;
+    height: 40px;
     border-radius: 4px;
 }
 
@@ -23,35 +45,77 @@ p {
 a {
     color: #ff8de3;
     text-decoration: none;
+    outline: none;
 }
 
 .fon {
-
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
     background-color: #505968;
-    width: 1200px;
+    width: calc(100% - 30px);
     height: auto;
     margin: auto;
     margin-top: 10px;
-
+    padding: 15px;
     border-radius: 4px;
 }
+.fon #foto a {
+    color: white;
+}
+.fon #foto img {
+    width: 200px;
+    height: 120px;
+    box-shadow: 4px 4px 7px black
+}
 
-#footer {
-    bottom: 5px;
+.footer {
+    width: 100%;
+    padding-bottom: 5px;
     margin: auto;
-    width: 1200px;
     height: 30px;
 }
 
-@media (max-width:1300px) {
-    #header {
-        width: 600px;
+.foto-galery {
+    width: 250px;
+    margin: 10px;
+    padding: -20px;
+}
+#foto img {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    height: auto;
+}
+.full {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 8%;
+    background: rgba(0, 0, 0, 0.5) center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    -webkit-background-origin: content-box;
+    background-origin: content-box;
+}
+.full:target {
+    display: flex;
+}
+
+@media (max-width:900px) {
+    .container {
+        width: auto;
+    }
+    .header {
+        width: 700px;
     }
     .fon {
-        width: 600px;
+        width: 670px;
     }
-    #footer {
-        width: 600px;
+    .footer {
+        width: 700px;
     }
-
 }
